@@ -117,7 +117,7 @@ p {
 .btn-gold {
   background-color: var(--gold);
   color: var(--text-light);
-  padding: 0.9rem 1.7rem;
+  padding: 0.8rem 1.7rem;
   border-radius: 0; /* suorakulmainen */
   font-weight: 600;
   transition: 0.3s;
@@ -192,7 +192,7 @@ p {
 /*GENERAL SECTION*/
 
 .section-padding {
-  padding-top: 110px;
+  padding-top: 100px;
   padding-bottom: 110px;
 }
 
