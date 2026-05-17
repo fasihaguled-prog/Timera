@@ -47,7 +47,7 @@ h5,
 }
 
 h1 {
-  font-size: 5rem;
+  font-size: 4rem;
   line-height: 1.05;
   margin-bottom: 1.5rem;
 }
@@ -438,7 +438,7 @@ section .col-12.col-md-3 .gallery-img {
     url("images/timera-cta.png");
   background-size: cover;
   background-position: center;
-  border-radius: o;
+  border-radius: 0;
   padding: 5rem 2rem;
   border: 1px solid rgba(255,255,255,0.05);
 }
@@ -582,6 +582,7 @@ section .col-12.col-md-3 .gallery-img {
   display: block;
 }
 
+
 /* RESPONSIVE */
 
 @media (max-width: 992px) {
@@ -664,27 +665,22 @@ section .col-12.col-md-3 .gallery-img {
     font-size: 2rem;
   }
 
- @media (max-width: 768px) {
-
   .hero,
   .tech-hero,
   .gallery-hero {
     height: 100vh;
     min-height: 100vh;
-
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-
     padding-top: 140px;
     padding-bottom: 60px;
   }
 
-}
   .btn-gold {
-  width: auto;
-  display: inline-block;
-}
+    width: auto;
+    display: inline-block;
+  }
 
   .section-padding,
   .tech-padding-section {
@@ -795,7 +791,7 @@ section .col-12.col-md-3 .gallery-img {
   .tech-avatar-fixed {
     padding: 60px 16px;
   }
-
+}
   .gallery-img,
   section .col-12.col-md-3 .gallery-img {
     height: 220px;
@@ -809,4 +805,3 @@ section .col-12.col-md-3 .gallery-img {
   .consultation-card {
     padding: 1.7rem 1rem;
   }
-}

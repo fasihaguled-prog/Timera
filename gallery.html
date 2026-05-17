@@ -4,9 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Timera | Gallery</title>
-
-  <!-- BOOTSTRAP: Core CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+<!--Bootstrap CSS CDN links tarvitsen tämän jotta bootstrap on sivussa responsiivinen ja layout toimii-->
+  <!-- Bootstrap CSS CDN link-->
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
   <!-- BOOTSTRAP: Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
@@ -14,7 +15,7 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-  <!-- Custom CSS -->
+  <!-- Custom CSS Tämä on external, css:llä on oma kansio-->
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -28,7 +29,7 @@
     </a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarNav" aria-controls="navbarNav"
+        data-bs-target="#navbarMenu" aria-controls="navbarMenu"
         aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
 </button>
@@ -59,25 +60,25 @@
   <div class="container">
     <div class="row g-4">
 
-      <div class="col-12 col-md-3"><img src="images/gallery.png" class="gallery-img" alt=""></div>
-      <div class="col-12 col-md-3"><img src="images/Timeraprodutdesign.png" class="gallery-img" alt=""></div>
-      <div class="col-12 col-md-3"><img src="images/gallery2.png" class="gallery-img" alt=""></div>
-      <div class="col-12 col-md-3"><img src="images/TimeraBox.png" class="gallery-img" alt=""></div>
+      <div class="col-12 col-md-3"><img src="images/gallery.png" class="gallery-img" alt="Timera implant product photography on dark fabric"></div>
+      <div class="col-12 col-md-3"><img src="images/Timeraprodutdesign.png" class="gallery-img" alt="Timera product design close-up"></div>
+      <div class="col-12 col-md-3"><img src="images/gallery2.png" class="gallery-img" alt="Timera device and packaging layout"></div>
+      <div class="col-12 col-md-3"><img src="images/TimeraBox.png" class="gallery-img" alt="Timera device and packaging layout"></div>
 
-      <div class="col-12 col-md-3"><img src="images/Timeraimplant.png" class="gallery-img" alt=""></div>
-      <div class="col-12 col-md-3"><img src="images/gallery10.png" class="gallery-img" alt=""></div>
-      <div class="col-12 col-md-3"><img src="images/gallery11.png" class="gallery-img" alt=""></div>
-      <div class="col-12 col-md-3"><img src="images/gallery14.png" class="gallery-img" alt=""></div>
+      <div class="col-12 col-md-3"><img src="images/Timeraimplant.png" class="gallery-img" alt="Timera implant applied on skin"></div>
+      <div class="col-12 col-md-3"><img src="images/gallery10.png" class="gallery-img" alt="Timera implant applied on skin"></div>
+      <div class="col-12 col-md-3"><img src="images/gallery11.png" class="gallery-img" alt="Timera implant applied on skin"></div>
+      <div class="col-12 col-md-3"><img src="images/gallery14.png" class="gallery-img" alt="Timera implant applied on skin"></div>
 
-      <div class="col-12 col-md-3"><img src="images/gallery15.png" class="gallery-img" alt=""></div>
-      <div class="col-12 col-md-3"><img src="images/gallery17.png" class="gallery-img" alt=""></div>
-      <div class="col-12 col-md-3"><img src="images/gallery18.png" class="gallery-img" alt=""></div>
-      <div class="col-12 col-md-3"><img src="images/gallery19.png" class="gallery-img" alt=""></div>
+      <div class="col-12 col-md-3"><img src="images/gallery15.png" class="gallery-img" alt="Timera device held in hand"></div>
+      <div class="col-12 col-md-3"><img src="images/gallery17.png" class="gallery-img" alt="Timera device held in hand"></div>
+      <div class="col-12 col-md-3"><img src="images/gallery18.png" class="gallery-img" alt="Timera device held in hand"></div>
+      <div class="col-12 col-md-3"><img src="images/gallery19.png" class="gallery-img" alt="Timera device held in hand"></div>
 
-      <div class="col-12 col-md-3"><img src="images/gallery5.png" class="gallery-img" alt=""></div>
-      <div class="col-12 col-md-3"><img src="images/gallery7.png" class="gallery-img" alt=""></div>
-      <div class="col-12 col-md-3"><img src="images/gallery8.png" class="gallery-img" alt=""></div>
-      <div class="col-12 col-md-3"><img src="images/gallery9.png" class="gallery-img" alt=""></div>
+      <div class="col-12 col-md-3"><img src="images/gallery5.png" class="gallery-img" alt="Timera device"></div>
+      <div class="col-12 col-md-3"><img src="images/gallery7.png" class="gallery-img" alt="Timera device"></div>
+      <div class="col-12 col-md-3"><img src="images/gallery8.png" class="gallery-img" alt="Timera device"></div>
+      <div class="col-12 col-md-3"><img src="images/gallery9.png" class="gallery-img" alt="Timera device"></div>
 
     </div>
   </div>
@@ -95,16 +96,16 @@
 
       <div class="col-md-2">
         <h6>About Timera</h6>
-        <a href="about.html">Our Mission</a>
+        <a href="index.html">Our Mission</a>
         <a href="technology.html">Technology</a>
-        <a href="contact.html">For You</a>
+        <a href="consultation.html">For You</a>
       </div>
 
       <div class="col-md-3">
         <h6>How It Works</h6>
-        <a href="contact.html">Consultation</a>
+        <a href="consultation.html">Consultation</a>
         <a href="technology.html">The Implant</a>
-        <a href="about.html">Aftercare</a>
+        <a href="technology.html">Aftercare</a>
       </div>
 
       <div class="col-md-3">
@@ -122,7 +123,7 @@
 </footer>
 
 <!-- BOOTSTRAP JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
 </body>
 </html>
