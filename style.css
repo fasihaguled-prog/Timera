@@ -1,6 +1,4 @@
-/* =========================
-   ROOT COLORS
-========================= */
+/*ROOT COLORS*/
 
 :root {
   --navy: #081d58;
@@ -11,9 +9,7 @@
   --border: rgba(255,255,255,0.08);
 }
 
-/* =========================
-   GLOBAL
-========================= */
+/*GLOBAL*/
 
 * {
   margin: 0;
@@ -38,9 +34,7 @@ a {
   text-decoration: none;
 }
 
-/* =========================
-   TYPOGRAPHY
-========================= */
+/*TYPOGRAPHY*/
 
 h1,
 h2,
@@ -53,7 +47,7 @@ h5,
 }
 
 h1 {
-  font-size: 5rem;
+  font-size: 4rem;
   line-height: 1.05;
   margin-bottom: 1.5rem;
 }
@@ -75,9 +69,7 @@ p {
   margin-bottom: 1rem;
 }
 
-/* =========================
-   NAVBAR
-========================= */
+/*NAVBAR*/
 
 .custom-navbar {
   background: rgba(4, 18, 53, 0.75);
@@ -120,9 +112,7 @@ p {
   color: var(--gold) !important;
 }
 
-/* =========================
-   BUTTON
-========================= */
+/*BUTTON*/
 
 .btn-gold {
   background-color: var(--gold);
@@ -141,9 +131,7 @@ p {
   transform: translateY(-2px);
 }
 
-/* =========================
-   SHARED HERO
-========================= */
+/*SHARED HERO*/
 
 .hero,
 .tech-hero,
@@ -201,9 +189,7 @@ p {
   max-width: 520px;
 }
 
-/* =========================
-   GENERAL SECTION
-========================= */
+/*GENERAL SECTION*/
 
 .section-padding {
   padding-top: 110px;
@@ -221,9 +207,7 @@ p {
   margin: 1rem auto 0;
 }
 
-/* =========================
-   HOW IT WORKS
-========================= */
+/*HOW IT WORKS*/
 
 .step-card,
 .process-step {
@@ -270,9 +254,7 @@ p {
   font-size: 0.88rem;
 }
 
-/* =========================
-   PERSONAL SECTION
-========================= */
+/*PERSONAL SECTION*/
 
 .personal-section {
   background:
@@ -333,9 +315,7 @@ p {
   border-color: var(--gold);
 }
 
-/* =========================
-   INCLUDED SECTION
-========================= */
+/* INCLUDED SECTION */
 
 .included-card {
   padding: 2rem 1rem;
@@ -352,9 +332,7 @@ p {
   margin-bottom: 1rem;
 }
 
-/* =========================
-   TECHNOLOGY PAGE
-========================= */
+/* TECHNOLOGY PAGE */
 
 .tech-padding-section {
   padding-top: 110px;
@@ -423,9 +401,7 @@ p {
   line-height: 1.9;
 }
 
-/* =========================
-   GALLERY PAGE
-========================= */
+/* GALLERY PAG */
 
 .gallery-hero + .section-padding,
 .hero--small + .section-padding,
@@ -450,9 +426,7 @@ section .col-12.col-md-3 .gallery-img {
   height: 280px;
 }
 
-/* =========================
-   CTA
-========================= */
+/* CTA */
 
 .cta-banner {
   padding: 110px 0;
@@ -464,7 +438,7 @@ section .col-12.col-md-3 .gallery-img {
     url("images/timera-cta.png");
   background-size: cover;
   background-position: center;
-  border-radius: o;
+  border-radius: 0;
   padding: 5rem 2rem;
   border: 1px solid rgba(255,255,255,0.05);
 }
@@ -484,9 +458,7 @@ section .col-12.col-md-3 .gallery-img {
   display: inline-block;
 }
 
-/* =========================
-   CONSULTATION PAGE
-========================= */
+/* CONSULTATION PAGE */
 
 .consultation-section,
 .consultation-hero {
@@ -572,9 +544,7 @@ section .col-12.col-md-3 .gallery-img {
   margin-right: 0.5rem;
 }
 
-/* =========================
-   FOOTER
-========================= */
+/*FOOTER*/
 
 .footer {
   border-top: 1px solid rgba(255,255,255,0.05);
@@ -612,9 +582,8 @@ section .col-12.col-md-3 .gallery-img {
   display: block;
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
+
+/* RESPONSIVE */
 
 @media (max-width: 992px) {
 
@@ -696,27 +665,22 @@ section .col-12.col-md-3 .gallery-img {
     font-size: 2rem;
   }
 
- @media (max-width: 768px) {
-
   .hero,
   .tech-hero,
   .gallery-hero {
     height: 100vh;
     min-height: 100vh;
-
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-
     padding-top: 140px;
     padding-bottom: 60px;
   }
 
-}
   .btn-gold {
-  width: auto;
-  display: inline-block;
-}
+    width: auto;
+    display: inline-block;
+  }
 
   .section-padding,
   .tech-padding-section {
@@ -827,7 +791,6 @@ section .col-12.col-md-3 .gallery-img {
   .tech-avatar-fixed {
     padding: 60px 16px;
   }
-
   .gallery-img,
   section .col-12.col-md-3 .gallery-img {
     height: 220px;

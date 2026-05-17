@@ -5,34 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Timera | Home</title>
 
-  <!-- BOOTSTRAP: Core CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<!--Bootstrap CSS CDN links tarvitsen tämän jotta bootstrap on sivussa responsiivinen ja layout toimii-->
+  <!-- Bootstrap CSS CDN link-->
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
-  <!-- BOOTSTRAP: Icons -->
+  <!-- BOOTSTRAP: Icons -Täältä voit katsoa miltä iconit näyttää ja niiden koodin https://icons.getbootstrap.com -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 
-  <!-- Google Fonts -->
+  <!-- Google Fonts - https://fonts.google.com/selection/embed -->
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-  <!-- Custom CSS -->
+  <!-- Custom CSS Tämä on external, css:llä on oma kansio-->
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- ========================================================= -->
-<!-- NAVBAR — BOOTSTRAP: navbar, navbar-expand-lg, collapse -->
-<!-- ========================================================= -->
+<!-- NAVBAR — navbar, navbar-expand-lg, collapse, navbar-dark. Custom css navi tekee siitä brändin näköisen -->
 <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
   <div class="container">
     <a class="navbar-brand" href="index.html">
       <img src="images/timera-logo.png" alt="Timera logo" class="logo-img">
     </a>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarMenu" aria-controls="navbarMenu"
+        aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+</button>
 
+<!--Navigaatiossa laita aktiiviseen tilaan aina se sivu missä ollaan-->
     <div class="collapse navbar-collapse" id="navbarMenu">
       <ul class="navbar-nav ms-auto align-items-lg-center">
         <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
@@ -46,19 +48,16 @@
     </div>
   </div>
 </nav>
-
-<!-- ========================================================= -->
-<!-- HERO — BOOTSTRAP: container, row, col-lg-6, min-vh-100 -->
-<!-- ========================================================= -->
+<!--HERO HOME ETUSIVU-->
 <header class="hero hero--large">
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-6 hero-text-box">
-        <p class="eyebrow">Timeless. Personal. Empowering.</p>
-        <h1>Designed<br>for your time.</h1>
+        <p class="eyebrow">Time, Stored for You</p>
+        <h1>Save Your Time for When It Matters</h1>
         <p>
-          Timera is a next-generation implant that empowers you to live in rhythm with your time.
-          It recognizes you. It adapts to you. It’s personal.
+        A biocompatible implant that lets you store time when you need it least and use it when you need it most. 
+        Fully personal, fully controlled, always yours.
         </p>
         <a href="consultation.html" class="btn btn-gold mt-3">Book Your Consultation</a>
       </div>
@@ -66,16 +65,14 @@
   </div>
 </header>
 
-<!-- ========================================================= -->
-<!-- HOW IT WORKS — BOOTSTRAP: container, row, col-md-6 col-lg-3 -->
-<!-- ========================================================= -->
+<!-- HOW IT WORKS — container, row, col-md-6 col-lg-3 -->
 <section class="section-padding border-section">
   <div class="container">
     <div class="text-center mb-5">
       <h2>How Timera Works</h2>
       <div class="title-line"></div>
     </div>
-
+<!--iso näyttö, medium näyttö eli mobiili ja tabletti. 3 tarkoittaa että ottaa 1/12 näytöstä-->
     <div class="row g-4 text-center">
       <div class="col-md-6 col-lg-3">
         <div class="step-card">
@@ -87,7 +84,8 @@
 
       <div class="col-md-6 col-lg-3">
         <div class="step-card">
-          <div class="step-icon"><i class="bi bi-crosshair"></i></div>
+          <div class="step-icon"><i class="bi bi-crosshair"></i>
+          </div>
           <h5>2. Personal Calibration</h5>
           <p>Timera is calibrated to you. It learns your rhythm and adapts to your time.</p>
         </div>
@@ -112,16 +110,85 @@
   </div>
 </section>
 
-<!-- ========================================================= -->
-<!-- PERSONAL BY DESIGN — BOOTSTRAP: container, row, col-lg-6 -->
-<!-- ========================================================= -->
+
+<!-- Donate time — Käytetty bootstrapista container, row, col-lg-6 -->
+<section class="section-padding border-section">
+  <div class="container-fluid px-3">
+
+    <div class="row align-items-center g-5">
+
+      <!-- TEXT LEFT -->
+      <div class="col-lg-6">
+        <div class="tech-text-panel">
+
+          <p class="eyebrow">New Feature</p>
+
+          <h2>Donate Time</h2>
+
+          <p>
+            You can now donate a portion of your time to loved ones or people in urgent need, 
+            such as accident patients racing to receive treatment in time. 
+            Even a few minutes can save a life. Every donation is completely voluntary. 
+            Time will never leave your body without your consent.
+          </p>
+
+          <p>
+            Keep in mind that each individual may donate a maximum of 1% of their total lifetime. Use this feature wisely.
+          </p>
+
+          <div class="d-flex flex-wrap gap-4 mt-5">
+
+            <div class="text-center">
+              <div class="mini-icon">
+                <i class="bi bi-heart"></i>
+              </div>
+              <p class="small">Urgent Support</p>
+            </div>
+
+            <div class="text-center">
+              <div class="mini-icon">
+                <i class="bi bi-shield-check"></i>
+              </div>
+              <p class="small">Fully Voluntary</p>
+            </div>
+
+            <div class="text-center">
+              <div class="mini-icon">
+                <i class="bi bi-clock"></i>
+              </div>
+              <p class="small">1% Lifetime Limit</p>
+            </div>
+
+          </div>
+
+          <a href="consultation.html" class="btn btn-gold mt-4">
+            Check Eligibility
+          </a>
+
+        </div>
+      </div>
+
+      <!-- IMAGE RIGHT -->
+      <div class="col-lg-6">
+        <img 
+          src="images/Timedonation.png" 
+          alt="Donate Time Feature"
+          class="img-fluid tech-split-img image-shadow"
+        >
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PERSONAL BY DESIGN — Käytetty bootstrapista container, row, col-lg-6 -->
 <section class="section-padding personal-section">
   <div class="container">
     <div class="row align-items-center g-5">
 
       <div class="col-lg-6">
         <div class="personal-image-wrapper">
-          <img src="images/gallery2.png" alt="Person wearing Timera implant" class="personal-image">
+          <img src="images/Blueimplant.png" alt=" Timera implant" class="personal-image">
         </div>
       </div>
 
@@ -129,8 +196,9 @@
         <p class="eyebrow">Personal by design</p>
         <h2>Personal by Design</h2>
         <p>
-          Timera is not for everyone. It is a personal implant that recognizes only you.
-          It is placed and activated with expert guidance, ensuring it works in harmony with your body and your time.
+          Timera is not for everyone. It is a personal implant that recognizes only you.<br>
+          The implant is placed either on the left wrist at the pulse point or between <br> the 4th and 5th ribs near the heart. 
+          You can connect it to an app that lets <br> you easily monitor your status and see how much time you have stored.
         </p>
 
         <div class="row g-4 mt-4 text-center text-lg-start">
@@ -138,7 +206,7 @@
             <div class="mini-icon"><i class="bi-fingerprint"></i></div>
             <h6>Recognizes<br>Only You</h6>
           </div>
-
+<!--md = medium devices, eli kaksi ikonia vierekkäin tabletissa esim. sm on taas small devices-->
           <div class="col-6 col-md-3">
             <div class="mini-icon"><i class="bi bi-shield-check"></i></div>
             <h6>Secure &<br>Private</h6>
@@ -149,10 +217,6 @@
             <h6>Expert-Guided<br>Setup</h6>
           </div>
 
-          <div class="col-6 col-md-3">
-            <div class="mini-icon"><i class="bi bi-clock"></i></div>
-            <h6>Syncs with<br>Your Rhythm</h6>
-          </div>
         </div>
       </div>
 
@@ -160,19 +224,19 @@
   </div>
 </section>
 
-<!-- ========================================================= -->
-<!-- WHAT'S INCLUDED — BOOTSTRAP: container, row, col-md-6 col-lg -->
-<!-- ========================================================= -->
+<!-- WHAT'S INCLUDED — Käytetty bootstrapin container, row, col-md-6 col-lg -->
 <section class="section-padding border-section">
   <div class="container">
     <div class="text-center mb-5">
       <h2>What’s Included</h2>
       <div class="title-line"></div>
     </div>
+   <!--Bootsrap spacing asteikon perusteella g-4 = lisää 1.5rem väliä sekä sarakkeiden että rivien väliin.--> 
 
     <div class="row g-4 text-center">
       <div class="col-md-6 col-lg">
         <div class="included-card">
+        <!--bi = Bootstrap Icons -kirjasto-->
           <i class="bi bi-person-circle"></i>
           <h5>Personal Assessment</h5>
           <p>In-depth consultation to ensure the perfect match for you.</p>
@@ -214,25 +278,23 @@
   </div>
 </section>
 
-<!-- ========================================================= -->
-<!-- CTA — BOOTSTRAP: container, text-center -->
-<!-- ========================================================= -->
+<!-- CTA BANNER ETUSIVULLA ENNEN FOOTER— Bootstrapin container, text-center -->
 <section class="cta-banner">
-  <div class="container-fluid">
+  <div class="container-fluid px-2">
     <div class="cta-box text-center">
       <h2>Your time is personal.</h2>
       <p>Timera is here to help you make the most of it.</p>
-      <a href="contact.html" class="btn btn-gold">Book Your Consultation</a>
+      <a href="consultation.html" class="btn btn-gold">Book Your Consultation</a>
     </div>
   </div>
 </section>
 
-<!-- ========================================================= -->
-<!-- FOOTER — BOOTSTRAP: container, row, col-md -->
-<!-- ========================================================= -->
+<!-- FOOTER SAMA KAIKILLA SIVUILLA— Käytetään bootstrapin container, row, col-md -->
 <footer class="footer">
   <div class="container">
     <div class="row gy-4">
+
+<!--Mobiilissa sarakkeet ovat allekkain siksi gy-4-->
 
       <div class="col-md-4">
         <span class="brand-logo"><img src="images/timera-logo.png" alt="timera-logo"></span>
@@ -240,19 +302,20 @@
           A next-generation implant designed to empower you to live in rhythm with your time.
         </p>
       </div>
-
+<!--Eri col-md‑arvot footerissa kertovat kuinka leveä kukin sarake on medium devicesta ylöspäin-->
+      
       <div class="col-md-2">
         <h6>About Timera</h6>
-        <a href="about.html">Our Mission</a>
+        <a href="index.html">Our Mission</a>
         <a href="technology.html">Technology</a>
-        <a href="contact.html">For You</a>
+        <a href="consultation.html">For You</a>
       </div>
 
       <div class="col-md-3">
         <h6>How It Works</h6>
-        <a href="contact.html">Consultation</a>
+        <a href="consultation.html">Consultation</a>
         <a href="technology.html">The Implant</a>
-        <a href="about.html">Aftercare</a>
+        <a href="technology.html">Aftercare</a>
       </div>
 
       <div class="col-md-3">
@@ -269,8 +332,8 @@
   </div>
 </footer>
 
-<!-- BOOTSTRAP JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- BOOTSTRAP JS eli javascript lataa ja aktivoi bootstrapin toiminnallisuudet -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
 </body>
 </html>
