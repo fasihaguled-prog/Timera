@@ -6,6 +6,8 @@
   --gold: #7A5A3A;
   --gold-light: #c8a46b;
   --text-light: #d9d9d9;
+  --creme: #AD8052;
+
   --border: rgba(255,255,255,0.08);
 }
 
@@ -62,7 +64,7 @@ p {
 }
 
 .eyebrow {
-  color: var(--gold);
+  color: var(--creme);
   text-transform: uppercase;
   letter-spacing: 3px;
   font-size: 0.85rem;
@@ -192,7 +194,7 @@ p {
 /*GENERAL SECTION*/
 
 .section-padding {
-  padding-top: 110px;
+  padding-top: 1px;
   padding-bottom: 110px;
 }
 
@@ -225,7 +227,7 @@ p {
   align-items: center;
   margin: auto auto 1.5rem;
   font-size: 2rem;
-  color: var(--gold);
+  color: var(--creme);
   transition: 0.3s;
 }
 
@@ -241,7 +243,7 @@ p {
 
 .process-step span {
   display: block;
-  color: var(--gold);
+  color: var(--creme);
   font-family: 'Cormorant Garamond', serif;
   font-size: 2rem;
   margin-top: 1rem;
@@ -324,7 +326,7 @@ p {
 
 .included-card i {
   font-size: 2rem;
-  color: var(--gold);
+  color: var(--creme);
   margin-bottom: 1rem;
 }
 
@@ -452,7 +454,7 @@ section .col-12.col-md-3 .gallery-img {
 }
 
 .cta-icon {
-  color: var(--gold);
+  color: var(--creme);
   font-size: 2rem;
   margin-bottom: 1rem;
   display: inline-block;
